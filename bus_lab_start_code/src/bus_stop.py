@@ -1,0 +1,17 @@
+
+class BusStop:
+    def __init__(self, name):
+        self.name = name
+        self.queue = []
+
+    def add_to_queue(self, person):
+        self.queue.append(person)
+
+    def queue_length(self):
+        return len(self.queue)
+
+    def clear(self):
+        for person in self.queue:
+            self.queue.remove(person)
+            # for passenger in self.passengers:
+            # self.drop_off(passenger)
